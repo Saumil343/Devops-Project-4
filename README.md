@@ -92,7 +92,7 @@ resource "aws_instance" "Terraform-instance-2" {
 - To Configure it go to manage jenkins ->  global tool config -> scroll to ansible section -> Give a name and path where ansible is installed usually ("/usr/bin")
 
 3) Setting up Github WebHooks :
-- for the example we are using git repo : https://github.com/Saumil343/test1.git
+- for the example we are using git repo :https://github.com/Saumil343/test3.git
 - Go to settings of your respective repo
 - Go to webhooks
 - Add web Hook
