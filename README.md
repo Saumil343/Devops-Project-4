@@ -148,7 +148,7 @@ resource "aws_instance" "Terraform-instance-2" {
     stages{
         stage("git checks"){
             steps{
-                git branch: 'main', url: 'https://github.com/Saumil343/test1.git'
+                git branch: 'main', url: 'https://github.com/Saumil343/test3.git'
             }
         }
         stage("Ansible playbook"){
@@ -183,13 +183,13 @@ resource "aws_instance" "Terraform-instance-2" {
       shell: rm -rf /var/www/html/*
 
     - name: cleaning files
-      shell: rm -rf ~/test1
+      shell: rm -rf ~/test3
 
     - name: git pull
-      shell: git clone https://github.com/Saumil343/test1.git
+      shell: git clone https://github.com/Saumil343/test3.git
 
     - name: git copy
-      shell: cp -r ~/test1 /var/www/html/
+      shell: cp -r ~/test3 /var/www/html/
       
     - name: service restart
       service:
